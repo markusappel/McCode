@@ -3561,8 +3561,9 @@ mcparseoptions(int argc, char *argv[])
         }
       if(j == mcnumipar)
       {                                /* Unrecognized parameter name */
-        fprintf(stderr, "Error: unrecognized parameter %s (mcparseoptions)\n", argv[i]);
-        exit(1);
+        fprintf(stderr, "WARNING: skipping unrecognized parameter %s (mcparseoptions)\n", argv[i]);
+/*        fprintf(stderr, "Error: unrecognized parameter %s (mcparseoptions)\n", argv[i]);*/
+/*        exit(1);*/
       }
     }
     else if(argv[i][0] == '-') {
